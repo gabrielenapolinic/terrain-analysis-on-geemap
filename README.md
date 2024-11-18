@@ -65,16 +65,5 @@ To use this script, ensure you have the following:
 | ^                               | ![Shape Index](Shape_Index.png)              |
 
 
-+---------------------+----------+
-| Property            | Earth    |
-+=============+=======+==========+
-|             | min   | -89.2 °C |
-| Temperature +-------+----------+
-| 1961-1990   | mean  | 14 °C    |
-|             +-------+----------+
-|             | max   | 56.7 °C  |
-+-------------+-------+----------+
-
-
 
 
