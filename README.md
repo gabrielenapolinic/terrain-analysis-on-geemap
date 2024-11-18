@@ -60,9 +60,9 @@ To use this script, ensure you have the following:
 
 | **TORTO Image**                 | **'Slope', 'Aspect' and 'Shape Index'**      |
 |---------------------------------|----------------------------------------------|
-|![Torto](TORTO.png)              | ![Slope](Slope.png)                          |
-| ^                               | ![Aspect](Aspect.png)                        |
-| ^                               | ![Shape Index](Shape_Index.png)              |
+|![Torto](TORTO.png)              || ![Slope](Slope.png)                          |
+| ^                               || ![Aspect](Aspect.png)                        |
+| ^                               || ![Shape Index](Shape_Index.png)              |
 
 
 
