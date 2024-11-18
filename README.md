@@ -55,59 +55,17 @@ To use this script, ensure you have the following:
 - Access to Google Drive for exporting results.
 
 ## Screenshots
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Layout</title>
-    <style>
-        /* Container for the layout */
-        .container {
-            display: grid;
-            grid-template-columns: 1fr 1fr; /* Two columns */
-            gap: 20px; /* Space between the columns */
-        }
-
-        /* Image style for responsiveness */
-        img {
-            width: 100%; /* Make images responsive */
-            height: auto; /* Maintain aspect ratio */
-        }
-
-        /* Optional: To center the images if you like */
-        .left-column {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .right-column {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
-            align-items: center;
-        }
-    </style>
-</head>
-<body>
-
-    <!-- Container for left and right columns -->
-    <div class="container">
-        <!-- Left column: only the TORTO image -->
-        <div class="left-column">
-            <img src="TORTO.png" alt="Torto River's Watershed" title="Torto River's Watershed" />
-        </div>
-
-        <!-- Right column: Slope, Aspect, and Shape Index images -->
-        <div class="right-column">
-            <img src="Slope.png" alt="Slope" title="Slope" />
-            <img src="Aspect.png" alt="Aspect" title="Aspect" />
-            <img src="Shape_Index.png" alt="Shape Index" title="Shape Index" />
-        </div>
+<div style="display: flex; justify-content: space-between;">
+    <div style="flex: 1; text-align: center;">
+        <img src="TORTO.png" alt="Torto River's Watershed" title="Torto River's Watershed" width="300" />
     </div>
+    <div style="flex: 1; text-align: center;">
+        <img src="Slope.png" alt="Slope" title="Slope" width="300" />
+        <img src="Aspect.png" alt="Aspect" title="Aspect" width="300" />
+        <img src="Shape_Index.png" alt="Shape Index" title="Shape Index" width="300" />
+    </div>
+</div>
 
-</body>
 </html>
 
 
