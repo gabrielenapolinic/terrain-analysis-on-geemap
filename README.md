@@ -59,7 +59,7 @@ To use this script, ensure you have the following:
     <div style="flex: 1; text-align: center;">
         <img src="TORTO.png" alt="Torto River's Watershed" title="Torto River's Watershed" width="300" />
     </div>
-    <div style="flex: 1; text-align: center;">
+    <div style="flex: 1; text-align: right;">
         <img src="Slope.png" alt="Slope" title="Slope" width="300" />
         <img src="Aspect.png" alt="Aspect" title="Aspect" width="300" />
         <img src="Shape_Index.png" alt="Shape Index" title="Shape Index" width="300" />
