@@ -60,9 +60,18 @@ To use this script, ensure you have the following:
 
 | **TORTO Image**                 | **'Slope', 'Aspect' and 'Shape Index'**      |
 |---------------------------------|----------------------------------------------|
-|![Torto](TORTO.png)              || ![Slope](Slope.png)                          |
-| ^                               || ![Aspect](Aspect.png)                        |
-| ^                               || ![Shape Index](Shape_Index.png)              |
+|![Torto](TORTO.png)              | ![Slope](Slope.png)                          |
+| ^                               | ![Aspect](Aspect.png)                        |
+| ^                               | ![Shape Index](Shape_Index.png)              |
+
+
+| Cell1| Cell2 | Cell3 |
+|------|-------|-------|
+| merge right ||       |
+| merge|       |       |
+| below|^      |^      |
+| merge both  || value1|
+|^            || value2|
 
 
 
