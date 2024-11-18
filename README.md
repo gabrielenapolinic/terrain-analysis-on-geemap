@@ -56,9 +56,14 @@ To use this script, ensure you have the following:
 
 ## Screenshots
 
-| **TORTO Image**                    | **Other Images**     | **Other Images**     | **Other Images**     |
-|------------------------------------|----------------------|----------------------|----------------------|
-| ![Torto](TORTO.png)                | ![Slope](Slope.png)  | ![Aspect](Aspect.png)| ![Shape Index](Shape_Index.png) |
+## Screenshots
+
+| **TORTO Image**                | **Other Images**      |
+|---------------------------------|-----------------------|
+| ![Torto](TORTO.png)             | ![Slope](Slope.png)   |
+| ![Torto](TORTO.png)             | ![Aspect](Aspect.png) |
+| ![Torto](TORTO.png)             | ![Shape Index](Shape_Index.png) |
+
 
 
 
