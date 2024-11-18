@@ -65,18 +65,14 @@ To use this script, ensure you have the following:
   </thead>
   <tbody>
     <tr>
-      <td class="tg-0pky" rowspan="3"><img src="TORTO.png" alt="Torto River's Watershed" width="300"/></td>
-      <td class="tg-0pky"><img src="Slope.png" alt="Slope" width="200"/></td>
+      <td class="tg-0pky" rowspan="3"><img src="TORTO.png" alt="Torto River's Watershed" width="400"/></td> <!-- Increased size for TORTO image -->
+      <td class="tg-0pky"><img src="Slope.png" alt="Slope" width="300"/></td> <!-- Increased size for Slope -->
     </tr>
     <tr>
-      <td class="tg-0pky"><img src="Aspect.png" alt="Aspect" width="200"/></td>
+      <td class="tg-0pky"><img src="Aspect.png" alt="Aspect" width="300"/></td> <!-- Increased size for Aspect -->
     </tr>
     <tr>
-      <td class="tg-0pky"><img src="Shape_Index.png" alt="Shape Index" width="200"/></td>
+      <td class="tg-0pky"><img src="Shape_Index.png" alt="Shape Index" width="300"/></td> <!-- Increased size for Shape Index -->
     </tr>
   </tbody>
 </table>
-
-
-
-
