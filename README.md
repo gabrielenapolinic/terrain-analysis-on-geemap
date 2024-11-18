@@ -55,9 +55,54 @@ To use this script, ensure you have the following:
 - Access to Google Drive for exporting results.
 
 ## Screenshots
-<img src="TORTO.png" alt="Alt text" title="Optional title" width="500" />
-<img src="Slope.png" alt="Alt text" title="Optional title" width="500" />
-<img src="Aspect.png" alt="Alt text" title="Optional title" width="500" />
-<img src="Shape_Index.png" alt="Alt text" title="Optional title" width="500" />
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Layout</title>
+    <style>
+        /* Container to hold the two columns */
+        .container {
+            display: flex;
+            justify-content: space-between; /* Space between the columns */
+        }
+
+        /* Left column style */
+        .left-column {
+            width: 45%; /* Adjust width for left column */
+        }
+
+        /* Right column style */
+        .right-column {
+            width: 45%; /* Adjust width for right column */
+        }
+
+        /* Add some margin to images to avoid them touching each other */
+        img {
+            width: 100%; /* Make images responsive */
+            margin-bottom: 10px; /* Add space between images */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Container for left and right columns -->
+    <div class="container">
+        <!-- Left column: only the TORTO image -->
+        <div class="left-column">
+            <img src="TORTO.png" alt="Torto River's Watershed" title="Torto River's Watershed" />
+        </div>
+
+        <!-- Right column: Slope, Aspect, and Shape Index images -->
+        <div class="right-column">
+            <img src="Slope.png" alt="Slope" title="Slope" />
+            <img src="Aspect.png" alt="Aspect" title="Aspect" />
+            <img src="Shape_Index.png" alt="Shape Index" title="Shape Index" />
+        </div>
+    </div>
+
+</body>
+</html>
 
 
