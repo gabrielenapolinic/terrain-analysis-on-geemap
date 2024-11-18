@@ -65,13 +65,16 @@ To use this script, ensure you have the following:
 | ^                               | ![Shape Index](Shape_Index.png)              |
 
 
-| Cell1| Cell2 | Cell3 |
-|------|-------|-------|
-| merge right ||       |
-| merge|       |       |
-| below|^      |^      |
-| merge both  || value1|
-|^            || value2|
++---------------+---------------+--------------------+
+| Fruit         | Price         | Advantages         |
++===============+===============+====================+
+| Bananas       | $1.34         | - built-in wrapper |
+|               |               | - bright color     |
++---------------+---------------+--------------------+
+| Oranges       | $2.10         | - cures scurvy     |
+|               |               | - tasty            |
++---------------+---------------+--------------------+
+
 
 
 
