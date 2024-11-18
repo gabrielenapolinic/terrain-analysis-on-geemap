@@ -55,5 +55,6 @@ To use this script, ensure you have the following:
 - Access to Google Drive for exporting results.
 
 ## Screenshots
-![Alt text](TORTO.png "Optional title")
+<img src="TORTO.png" alt="Alt text" title="Optional title" width="500" />
+
 
