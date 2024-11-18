@@ -58,11 +58,11 @@ To use this script, ensure you have the following:
 
 ## Screenshots
 
-| **TORTO Image**                | **Other Images**      |
-|---------------------------------|-----------------------|
-                                  | ![Slope](Slope.png)   |
-| ![Torto](TORTO.png)             | ![Aspect](Aspect.png) |
-                                  | ![Shape Index](Shape_Index.png) |
+| **TORTO Image**                 | **'Slope', 'Aspect' and 'Shape Index'**      |
+|---------------------------------|----------------------------------------------|
+|![Torto](TORTO.png)              | ![Slope](Slope.png)                          |
+| ^                               | ![Aspect](Aspect.png)                        |
+| ^                               | ![Shape Index](Shape_Index.png)              |
 
 
 
