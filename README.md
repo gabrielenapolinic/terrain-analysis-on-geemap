@@ -55,18 +55,22 @@ To use this script, ensure you have the following:
 - Access to Google Drive for exporting results.
 
 ## Screenshots
-<div style="display: flex; justify-content: space-between;">
-  <!-- Left column: only the TORTO image -->
-  <div style="flex: 1; text-align: center;">
+<!-- Grid container for the layout -->
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+
+  <!-- Left column: TORTO image -->
+  <div style="text-align: center;">
     <img src="TORTO.png" alt="Torto River's Watershed" title="Torto River's Watershed" width="300" />
   </div>
 
-  <!-- Right column: Slope, Aspect, and Shape Index images -->
-  <div style="flex: 1; text-align: center;">
+  <!-- Right column: Slope, Aspect, and Shape Index images stacked vertically -->
+  <div style="display: flex; flex-direction: column; align-items: center; justify-content: space-evenly;">
     <img src="Slope.png" alt="Slope" title="Slope" width="300" />
     <img src="Aspect.png" alt="Aspect" title="Aspect" width="300" />
     <img src="Shape_Index.png" alt="Shape Index" title="Shape Index" width="300" />
   </div>
+
+</div>
 </div>
 
 </html>
