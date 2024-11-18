@@ -56,5 +56,8 @@ To use this script, ensure you have the following:
 
 ## Screenshots
 <img src="TORTO.png" alt="Alt text" title="Optional title" width="500" />
+<img src="Slope.png" alt="Alt text" title="Optional title" width="500" />
+<img src="Aspect.png" alt="Alt text" title="Optional title" width="500" />
+<img src="Shape_Index.png" alt="Alt text" title="Optional title" width="500" />
 
 
