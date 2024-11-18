@@ -55,10 +55,10 @@ To use this script, ensure you have the following:
 - Access to Google Drive for exporting results.
 
 ## Screenshots
-| **TORTO Image**      | **Other Images**     |
-|----------------------|----------------------|
-| ![Torto](TORTO.png)  | ![Slope](Slope.png)   |
-                       | ![Aspect](Aspect.png) |
-                       | ![Shape Index](Shape_Index.png) |
+
+| **TORTO Image**                    | **Other Images**     | **Other Images**     | **Other Images**     |
+|------------------------------------|----------------------|----------------------|----------------------|
+| ![Torto](TORTO.png)                | ![Slope](Slope.png)  | ![Aspect](Aspect.png)| ![Shape Index](Shape_Index.png) |
+
 
 
