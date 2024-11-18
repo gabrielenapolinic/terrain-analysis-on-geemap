@@ -62,26 +62,31 @@ To use this script, ensure you have the following:
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Image Layout</title>
     <style>
-        /* Container to hold the two columns */
+        /* Container for the layout */
         .container {
-            display: flex;
-            justify-content: space-between; /* Space between the columns */
+            display: grid;
+            grid-template-columns: 1fr 1fr; /* Two columns */
+            gap: 20px; /* Space between the columns */
         }
 
-        /* Left column style */
-        .left-column {
-            width: 45%; /* Adjust width for left column */
-        }
-
-        /* Right column style */
-        .right-column {
-            width: 45%; /* Adjust width for right column */
-        }
-
-        /* Add some margin to images to avoid them touching each other */
+        /* Image style for responsiveness */
         img {
             width: 100%; /* Make images responsive */
-            margin-bottom: 10px; /* Add space between images */
+            height: auto; /* Maintain aspect ratio */
+        }
+
+        /* Optional: To center the images if you like */
+        .left-column {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .right-column {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
         }
     </style>
 </head>
@@ -104,5 +109,6 @@ To use this script, ensure you have the following:
 
 </body>
 </html>
+
 
 
