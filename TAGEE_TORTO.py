@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[1]:
-
-
 import ee
 ee.Initialize()
 
@@ -19,8 +13,9 @@ gaussianFilter = ee.Kernel.gaussian(
 srtmSmooth = ee.Image("USGS/SRTMGL1_003").convolve(gaussianFilter).resample("bilinear")
 
 # Load the FeatureCollection (SU2)
-# This collection contains the features (e.g., polygons or points) where the terrain metrics will be calculated.
-SU2 = ee.FeatureCollection('projects/ee-gabrielenicolanapoli/assets/Fiume_Torto')
+# Replace 'path_to_your_feature_collection' with the actual path to your data.
+feature_collection_path = 'path_to_your_feature_collection'
+SU2 = ee.FeatureCollection(feature_collection_path)
 
 # Calculate terrain metrics
 # Compute multiple terrain metrics (elevation, slope, aspect, curvature, etc.) using the smoothed DEM.
@@ -51,17 +46,13 @@ reduction = abbreviated_metrics.reduceRegions(
     reducer=reducer
 )
 
-
-# In[2]:
-
-
 # Export the results as a GeoJSON to Google Drive
-# Export the reduced data (mean and standard deviation) as a GeoJSON file to Google Drive for further use or analysis.
+# Replace 'your_folder_name' with the desired folder name in Google Drive.
 task = ee.batch.Export.table.toDrive(
     collection=reduction,
     description='Torto_TAGEE',
     fileFormat='GeoJSON',
-    folder='EarthEngineExports'
+    folder='your_folder_name'
 )
 
 # Start the export task
@@ -69,31 +60,3 @@ task = ee.batch.Export.table.toDrive(
 task.start()
 
 print("Export started. Check your Google Drive for the file.")
-
-
-# In[ ]:
-
-
-# Optional: Cancel running tasks
-# This block of code can cancel any active or pending tasks in GEE.
-# Uncomment and run if necessary.
-# import ee
-# ee.Initialize()
-# tasks = ee.batch.Task.list()
-
-# for task in tasks:
-#     if task.status()['state'] in ['RUNNING', 'READY']:
-#         task.cancel()
-#         print(f"Task {task.id} has been cancelled.")
-
-
-# In[3]:
-
-
-# Optional: Convert GeoJSON to Shapefile
-# Use geopandas to convert the exported GeoJSON file to a Shapefile for compatibility with other GIS software.
-# import geopandas as gpd
-
-# gdf = gpd.read_file('C:\\Users\\gabri\\OneDrive\\Desktop\\Torto_TAGEE_2.geojson')
-# gdf.to_file('C:\\Users\\gabri\\OneDrive\\Desktop\\SHP\\Torto_TAGEE_2.shp')
-
