@@ -1,7 +1,5 @@
 # Terrain Analysis with Google Earth Engine
 
-![GPLv3 License](GPLv3_Logo.svg.png)
-
 This repository contains a Python script for terrain analysis using Google Earth Engine (GEE). It computes various terrain metrics over a specified FeatureCollection using a smoothed Digital Elevation Model (DEM).
 
 ## Overview
@@ -10,13 +8,17 @@ The script calculates morphometric factors such as elevation, slope, aspect, and
 
 ## Key Features
 
-1. **Initialization of Google Earth Engine** The script initializes the GEE API for geospatial processing.
+1. **Initialization of Google Earth Engine**
+   The script initializes the GEE API for geospatial processing.
 
-2. **Smoothing the DEM** A Gaussian filter is applied to the DEM (NASADEM) to reduce noise and enhance terrain data quality.
+2. **Smoothing the DEM**
+   A Gaussian filter is applied to the DEM (NASADEM) to reduce noise and enhance terrain data quality.
 
-3. **Loading FeatureCollection** The script loads a FeatureCollection (SU2) for terrain metric calculations.
+3. **Loading FeatureCollection**
+   The script loads a FeatureCollection (SU2) for terrain metric calculations.
 
-4. **Calculating Terrain Metrics** The script computes the following terrain metrics:
+4. **Calculating Terrain Metrics**
+   The script computes the following terrain metrics:
    - **Elevation (El)**
    - **Slope (S)**
    - **Aspect (As)**
@@ -31,11 +33,14 @@ The script calculates morphometric factors such as elevation, slope, aspect, and
    - **Gaussian Curvature (Gauss)**
    - **Shape Index (Sh)**
 
-5. **Calculating Statistics** The mean and standard deviation of each terrain metric are computed for each feature in the FeatureCollection.
+5. **High-Resolution Zonal Statistics**
+   The script uses a mapped `reduceRegion` function to calculate the **Mean** and **Standard Deviation** for each metric. This approach supports high-resolution analysis (e.g., 10m scale) and complex geometries by processing features individually.
 
-6. **Renaming Metrics** Terrain metric bands are renamed for easier handling.
+6. **Renaming Metrics**
+   Terrain metric bands are renamed for easier handling.
 
-7. **Exporting Results** The summarized data (mean and standard deviation) is exported as a GeoJSON file to Google Drive for further analysis in GIS software.
+7. **Exporting Results**
+   The summarized data is exported as a GeoJSON file to Google Drive for further analysis in GIS software.
 
 ## Output
 
@@ -60,10 +65,20 @@ To use this script, ensure you have the following:
   </thead>
   <tbody>
     <tr>
-      <td class="tg-0pky" rowspan="3"><img src="TORTO.png" alt="Torto River's Watershed" width="400"/></td> <td class="tg-0pky"><img src="Slope.png" alt="Slope" width="300"/></td> </tr>
+      <td class="tg-0pky" rowspan="3"><img src="TORTO.png" alt="Torto River's Watershed" width="400"/></td>
+      <td class="tg-0pky"><img src="Slope.png" alt="Slope" width="300"/></td>
+    </tr>
     <tr>
-      <td class="tg-0pky"><img src="Aspect.png" alt="Aspect" width="300"/></td> </tr>
+      <td class="tg-0pky"><img src="Aspect.png" alt="Aspect" width="300"/></td>
+    </tr>
     <tr>
-      <td class="tg-0pky"><img src="Shape_Index.png" alt="Shape Index" width="300"/></td> </tr>
+      <td class="tg-0pky"><img src="Shape_Index.png" alt="Shape Index" width="300"/></td>
+    </tr>
   </tbody>
 </table>
+
+## License
+
+This project is licensed under the GNU General Public License v3.0.
+
+<img src="GPLv3_Logo.svg.png" alt="GPLv3 License" width="200"/>
